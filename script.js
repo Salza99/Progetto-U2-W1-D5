@@ -1,4 +1,4 @@
-const animazionescroll = () => {
+const animazioneScroll = () => {
   document.addEventListener("scroll", () => {
     const vertical = window.scrollY;
 
@@ -15,4 +15,18 @@ const animazionescroll = () => {
     }
   });
 };
-animazionescroll();
+animazioneScroll();
+
+const svgAnimation = () => {
+  const svg = document.querySelector("svg g g");
+  const arrSvg = svg.ariaLabel.split(" ");
+  setInterval(() => {
+    let r = Math.floor(Math.random() * arrSvg.length);
+    arrSvg.splice(r, r + 1);
+    svg.ariaLabel = arrSvg.toString();
+    console.log(arrSvg);
+  }, 1000);
+
+  //   console.log(arrSvg);
+};
+svgAnimation();
