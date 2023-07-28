@@ -23,7 +23,7 @@ const svgAnimation = () => {
   setInterval(() => {
     let r = Math.floor(Math.random() * arrSvg.length);
     arrSvg.splice(r, r + 1);
-    svg.ariaLabel = arrSvg.toString();
+    svg.ariaLabel = arrSvg.join();
     console.log(arrSvg);
   }, 1000);
 
