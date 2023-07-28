@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #ffc017;
+}
+
+nav {
+  height: 60px;
+  background-color: #ffc017;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.505);
+  transition: all 0.5s;
+}
+nav img {
+  height: 1.5rem;
+}
+nav a {
+  color: black;
+}
+button {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+nav button {
+  padding: 0.5rem 1rem;
+  transition: all 0.5s;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 0.7rem;
+  list-style-type: none;
+}
+.menu {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+}
+.menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intestazione {
+  height: 25rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.505);
+}
+.titolo {
+  padding-top: 3rem;
+  padding-left: 6rem;
+  flex-basis: 50%;
+}
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 6rem;
+  font-weight: 500;
+}
+header p {
+  font-size: 1.5rem;
+}
+header .titolo button {
+  margin: 1.5rem 0;
+  padding: 0.6rem 1.8rem;
+}
+h5 {
+  padding-left: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.margintb {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+.padding img {
+  padding-left: 2rem;
+}
+.prima-sezione {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.458);
+  height: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.articolo-alto {
+  display: flex;
+  flex-basis: 31%;
+}
+.utente {
+  display: flex;
+  align-items: center;
+}
+.utente img {
+  width: 1.2rem;
+  border-radius: 100%;
+}
+.sezione-articolo-alto {
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.basis {
+  flex-basis: 80%;
+}
+.time {
+  font-size: 0.9rem;
+  color: grey;
+  font-weight: 500;
+  padding-top: 0.6rem;
+}
+h6 {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  font-weight: 700;
+  padding: 0.6rem 0;
+}
+.numero {
+  width: 15%;
+}
+.numero p {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: rgba(211, 211, 211, 0.645);
+}
+h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.seconda-sezione {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.sezioni-articolo-basso {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.colonna-centrale img {
+  width: 15rem;
+  padding: 1rem;
+}
+.colonna-centrale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 20%;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.articolo-basso p {
+  font-size: 1.1rem;
+  color: grey;
+  display: inline-block;
+}
+span {
+  background-color: rgba(211, 211, 211, 0.447);
+  color: gray;
+
+  padding: 0.1rem 0.3rem;
+  border-radius: 15px;
+}
+.bookmark {
+  position: relative;
+  left: 90%;
+}
+.terza-sezione {
+  align-items: center;
+}
+.categoria {
+  display: inline-block;
+  border: 1px solid lightgray;
+  padding: 0.3rem 0.7rem;
+  margin: 0 0.5rem 0.5rem 0;
+}
+.sezione-categoria {
+  width: 80%;
+  padding: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+.sezione-categoria h5 {
+  margin-bottom: 2rem;
+}
+.lista {
+  width: 80%;
+  margin-top: 2rem;
+}
+.lista ul li {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+.lista ul a {
+  color: black;
+  text-decoration: none;
+}
+
+.animazione {
+  transition: all 0.5s;
+  background-color: white;
+}
+.animazione-bottone {
+  transition: all 0.5s;
+  background-color: green;
+}
