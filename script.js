@@ -18,14 +18,28 @@ const animazioneScroll = () => {
 animazioneScroll();
 
 const svgAnimation = () => {
-  const svg = document.querySelector("svg g g");
-  const arrSvg = svg.ariaLabel.split(" ");
+  const svg = document.querySelectorAll("svg g g g[opacity]");
+  const lunghezzaM = document.querySelectorAll("svg g g g[opacity='1']");
+  const a = setInterval(() => {
+    svg[Math.floor(Math.random() * svg.length)].attributes.opacity.value = 0;
+    // console.log(document.querySelectorAll("svg g g g[opacity='0']").length);
+    // if (document.querySelectorAll("svg g g g[opacity='0']").length > lunghezzaM - 20) {
+    //   console.log("ci entra dc");
+    //   clearInterval(a);
+    // }
+    // console.log(arrSvg);
+  }, 100);
+
   setInterval(() => {
-    let r = Math.floor(Math.random() * arrSvg.length);
-    arrSvg.splice(r, r + 1);
-    svg.ariaLabel = arrSvg.join();
-    console.log(arrSvg);
-  }, 1000);
+    const svgOp = document.querySelectorAll("svg g g g[opacity='0']");
+    svgOp[Math.floor(Math.random() * svgOp.length)].attributes.opacity.value = 1;
+    if (document.querySelectorAll("svg g g g[opacity='0']").length > lunghezzaM) {
+      console.log("sidia");
+      return;
+    }
+
+    // console.log(arrSvg);
+  }, 100);
 
   //   console.log(arrSvg);
 };
